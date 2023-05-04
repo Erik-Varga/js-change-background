@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+    --r:1;
+    --g:1;
+    --b:1;
+}
+
+* {
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(var(--r), var(--g), var(--b));
+    animation: 3s ease;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    gap: 10px;
+    background: transparent;
+}
+
+.red, .green, .blue {
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.5);
+    width: 150px;
+    height: 150px;
+    padding: 10px 15px;
+    border-radius: 0.5rem;
+    /* border-radius: 50%; */
+}
+
+.red {
+    background: rgb(var(--r), 0, 0);
+}
+
+.green {
+    background: rgb(0, var(--g), 0);
+}
+
+.blue {
+    background: rgb(0, 0, var(--b));
+}
+
+footer {
+    font-family: inherit;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    font-size: 1rem;
+    color: whitesmoke;
+}
+
+footer a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+footer a:hover {
+    filter: brightness(110%);
+    transition: 0.3s;
+    color: whitesmoke;
+}
