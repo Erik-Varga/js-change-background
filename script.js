@@ -8,11 +8,11 @@ let random_r = Math.floor(Math.random(1, 255) * 255);
 let random_g = Math.floor(Math.random(1, 255) * 255);
 let random_b = Math.floor(Math.random(1, 255) * 255);
 
-let random_interval = Math.floor(Math.random(100, 300) * 300);
+let random_interval = Math.floor(Math.random(1000, 3000) * 3000);
 
-let random_interval_1 = Math.floor(Math.random(100, 300) * 300);
-let random_interval_2 = Math.floor(Math.random(100, 300) * 300);
-let random_interval_3 = Math.floor(Math.random(100, 300) * 300);
+let random_interval_1 = Math.floor(Math.random(1000, 3000) * 3000);
+let random_interval_2 = Math.floor(Math.random(1000, 3000) * 3000);
+let random_interval_3 = Math.floor(Math.random(1000, 3000) * 3000);
 
 var direction = 1;
 var r = 0;
@@ -53,11 +53,11 @@ setInterval(() => {
 }, random_interval_3)
 
 setInterval(() => {
-    random_interval_1 = Math.floor(Math.random(100, 300) * 300);
+    random_interval_1 = Math.floor(Math.random(1000, 3000) * 3000);
     randomInterval1.textContent = random_interval_1;
-    random_interval_2 = Math.floor(Math.random(100, 300) * 300);
+    random_interval_2 = Math.floor(Math.random(1000, 3000) * 3000);
     randomInterval2.textContent = random_interval_2;
-    random_interval_3 = Math.floor(Math.random(100, 300) * 300);
+    random_interval_3 = Math.floor(Math.random(1000, 3000) * 3000);
     randomInterval3.textContent = random_interval_3;
 }, 10000);
 
